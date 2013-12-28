@@ -25,4 +25,12 @@ describe "pages" do
       expect(page).to have_content('About')
     end
   end
+  
+    describe "Contact page" do
+
+    it "should have the content 'Contact'" do
+      visit '/pages/contact'
+      expect(page).to have_content('Contact')
+    end
+  end
 end
