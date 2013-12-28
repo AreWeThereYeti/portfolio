@@ -1,9 +1,13 @@
 Portfolio::Application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'pages#home'
+   
+  get "pages/home"
+  get "pages/work"
+  get "pages/about"
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
