@@ -77,40 +77,46 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Our Work</h2>
+            <h2>Projekter</h2>
             <hr>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6 col-xs-3 text-center">
             <div class="portfolio-item test1">
-              <a data-toggle="modal" data-target="#myModal"><img class="img-portfolio img-responsive" src="<%= asset_path 'portfolio-1.jpg' %>"></a>
-              <h4>Cityscape</h4>
+              <a data-toggle="modal" data-target="#safesailingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'ss_logo.svg' %>"></a>
+              <h4>Safe Sailing</h4>
+              <p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-3 text-center">
             <div class="portfolio-item" >
-              <img class="img-portfolio img-responsive" src="<%= asset_path 'portfolio-2.jpg' %>">
-              <h4>Is That On Fire?</h4>
+              <img class="img-portfolio img-responsive" src="<%= asset_path 'loadmaster_logo.png' %>">
+              <h4>Loadmaster Logger FMS</h4>
+               <p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
             </div>
         </div>
-          <div class="col-md-4 col-md-4 col-sm-6 col-xs-3 text-center">
-            <div class="portfolio-item">
-              <a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'portfolio-3.jpg' %>"></a>
-              <h4>Stop Sign</h4>
-            </div>
-          </div>
+
           <div class="row">
           	<div class="col-md-4 col-md-4 col-sm-6 col-xs-3 text-center">
             	<div class="portfolio-item">
-					<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'portfolio-4.jpg' %>"></a>
-					<h4>Narrow Focus</h4>
+					<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'stoptyven_logo.svg' %>"></a>
+					<h4>Stop Tyven, TV2 kampagne</h4>
+					<p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis</p>
 				</div>
 			</div>
+			<div class="col-md-4 col-md-4 col-sm-6 col-xs-3 text-center">
+	            <div class="portfolio-item">
+	              <a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
+	              <h4>TV2</h4>
+	               <p>Andre mindre projekter for TV2</p>
+	            </div>
+	          </div>
 			  <div class="col-md-4 col-md-4 col-sm-6 col-xs-3 text-center">
             	<div class="portfolio-item">
-					<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'portfolio-4.jpg' %>"></a>
-					<h4>Narrow Focus</h4>
+					<a data-toggle="modal" data-target="#roskildefortaellingermodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'roskilde_fortaellinger.png' %>"></a>
+					<h4>Roskildefortællinger</h4>
+					<p>Animeret logo</p>
 				</div>
 			</div>
 			  <div class="col-md-4 col-md-4 col-sm-6 col-xs-3 text-center">
@@ -145,6 +151,24 @@
     </div>
     <!-- /Map -->
     
+<!-- Modal Safesailing -->
+<div class="modal fade" id="safesailingmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Safe Sailing</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -155,6 +179,43 @@
       </div>
       <div class="modal-body">
         ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="roskildefortaellingermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Roskildefortællinger</h4>
+      </div>
+      <div class="modal-body">
+      <p>Festivalfortællinger er et projekt, der bygger på alle de sjove, skæve, og rørende oplevelser, som vi har med os i Roskilde-bagagen, og som gør Roskilde Festival til noget helt unik. I forbindelse med projektet blev jeg bedt om at animere deres logo til brug i de fortællinger som var tilgængelige. Logoet er animeret i Adobe After Effects. Se flere fortællinger på <a href="https://www.facebook.com/Festivalfortaellinger">deres facebook side</a></p>
+       <iframe class="center-block" src="//player.vimeo.com/video/83376756" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
