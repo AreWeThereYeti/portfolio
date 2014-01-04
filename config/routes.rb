@@ -2,9 +2,6 @@ Portfolio::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root  'pages#home'   
-  match '/work',    to: 'pages#work',    via: 'get'
-  match '/about',   to: 'pages#about',   via: 'get'
-  match '/contact', to: 'pages#contact', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
