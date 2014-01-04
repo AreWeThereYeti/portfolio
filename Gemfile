@@ -3,7 +3,6 @@ ruby '2.1.0'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.2'
-gem "font-awesome-rails"
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
