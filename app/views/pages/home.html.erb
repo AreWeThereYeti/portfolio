@@ -1,0 +1,231 @@
+<% provide(:title, 'Home') %>
+   <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text">
+        <h1>Mikkel Markvardsen</h1>
+        <h3>Hello there. You found your way to my portfolio. </br>Maybe I can help you with something? Press below to find out</h3>
+        <a href=#about><i class="service-icon fa fa-arrow-down"></i></a>
+      </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Intro -->
+    <div id="about" class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h2>Who am i?</h2>
+            <p class="lead">My name is Mikkel Markvardsen.</br> I create digital experiences.</p>
+ <p class="lead">
+I am a programmer, an interaction designer, a graphics designer and a multimedia developer and I currently reside in Copenhagen, Denmark.
+I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, Angular.js, HTML, CSS, Unity3d and Max/MSP.</p>
+
+ <p class="lead">Currently I am CTO of Safe Sailing Sailing, a scandinavian company that specializes in maritime education. </br> Furthermore, I create digital experiences with my other company, <a href="MasMediaLink">MAS Media.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Intro -->
+  
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>What can i do for you?</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-12 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-sitemap"></i>
+              <h4>Spacecraft Repair</h4>
+              <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-12 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-wrench"></i>
+              <h4>Problem Solving</h4>
+              <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-12 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-users"></i>
+              <h4>Blacksmithing</h4>
+              <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-12 text-center">
+            <div class="service-item">
+              <i class="service-icon fa fa-code"></i>
+              <h4>Pencil Sharpening</h4>
+              <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Callout -->
+    <div class="callout">
+      <div class="vert-text">
+        <h1>Looks nice, right? Keep going.</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>What have i done?</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          	<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+            <div class="portfolio-item test1">
+              <a data-toggle="modal" data-target="#safesailingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'ss_logo.svg' %>"></a>
+              <h4>Safe Sailing</h4>
+              <p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
+            </div>
+          </div>
+          	<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+            <div class="portfolio-item" >
+              <img class="img-portfolio img-responsive" src="<%= asset_path 'loadmaster_logo.png' %>">
+              <h4>Loadmaster Logger FMS</h4>
+               <p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
+            </div>
+        </div>
+		  	<div class="col-md-4 col-md-4 col-sm-4 col-xs-3 text-center">
+        	<div class="portfolio-item">
+				<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'stoptyven_logo.svg' %>"></a>
+				<h4>Stop Tyven, TV2 kampagne</h4>
+				<p>Front-end udvikler. </p>
+			</div>
+		</div>
+        </div>
+        <div class="row">
+			<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+	            <div class="portfolio-item">
+	              <a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
+	              <h4>TV2</h4>
+	               <p>Andre mindre projekter for TV2</p>
+	            </div>
+	          </div>
+			<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            	<div class="portfolio-item">
+					<a data-toggle="modal" data-target="#roskildefortaellingermodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'roskilde_fortaellinger.png' %>"></a>
+					<h4>Roskildefortællinger</h4>
+					<p>Animeret logo</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            	<div class="portfolio-item">
+					<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
+					<h4>Narrow Focus</h4>
+					<p>Animeret logo</p>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+    <!-- /Portfolio -->
+
+    <!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h3>The buttons below are impossible to resist.</h3>
+            <a href="#" class="btn btn-lg btn-default">Click Me!</a>
+            <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
+
+    <!-- Map -->
+    <div id="contact" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small></iframe>
+    </div>
+    <!-- /Map -->
+    
+<!-- Modal Safesailing -->
+<div class="modal fade" id="safesailingmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Safe Sailing</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal Loadmaster-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Loadmaster Logger</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="roskildefortaellingermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Roskildefortællinger</h4>
+      </div>
+      <div class="modal-body">
+      <p>Festivalfortællinger er et projekt, der bygger på alle de sjove, skæve, og rørende oplevelser, som vi har med os i Roskilde-bagagen, og som gør Roskilde Festival til noget helt unik. I forbindelse med projektet blev jeg bedt om at animere deres logo til brug i de fortællinger som var tilgængelige. Logoet er animeret i Adobe After Effects. Se flere fortællinger på <a href="https://www.facebook.com/Festivalfortaellinger">deres facebook side</a></p>
+       <iframe class="center-block" src="//player.vimeo.com/video/83376756" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
