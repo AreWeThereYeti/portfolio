@@ -19,7 +19,6 @@ Portfolio::Application.configure do
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
   
-   config.assets.js_compressor = :uglifier
   
     # Generate digests for assets URLs.
   config.assets.digest = false
