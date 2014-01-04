@@ -18,6 +18,12 @@ Portfolio::Application.configure do
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
+  
+    # Generate digests for assets URLs.
+  config.assets.digest = false
+  
+    # Do not fallback to assets pipeline if a precompiled asset is missed.
+  config.assets.compile = true
 
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
