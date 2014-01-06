@@ -15,7 +15,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-md-8 col-md-offset-2 text-center">
+          <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center">
             <h2>Who am i?</h2>
             <p class="lead">My name is Mikkel Markvardsen.</br> I create digital experiences.</p>
  <p class="lead">
@@ -23,6 +23,8 @@ I am a programmer, an interaction designer, a graphics designer and a multimedia
 I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, Angular.js, HTML, CSS, Unity3d and Max/MSP.</p>
 
  <p class="lead">Currently I am CTO of Safe Sailing Sailing, a scandinavian company that specializes in maritime education. </br> Furthermore, I create digital experiences with my other company, <a href="MasMediaLink">MAS Media.</a></p>
+         <a href=#services><i class="service-icon fa fa-arrow-down invert"></i></a>
+
           </div>
         </div>
       </div>
@@ -34,7 +36,6 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-offset-4 text-center">
-
             <h2>What can i do for you?</h2>
             <hr>
           </div>
@@ -43,7 +44,7 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
           <div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-12 text-center">
             <div class="service-item">
               <i class="service-icon fa fa-sitemap"></i>
-              <h4>Spacecraft Repair</h4>
+              <h4>Project management</h4>
               <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
             </div>
           </div>
@@ -57,18 +58,22 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
           </div>
           <div class="col-md-2 col-sm-3 col-xs-12 text-center">
             <div class="service-item">
-              <i class="service-icon fa fa-users"></i>
-              <h4>Blacksmithing</h4>
+              <i class="service-icon fa fa-lightbulb-o"></i>
+              <h4>Concept development</h4>
               <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
             </div>
           </div>
           <div class="col-md-2 col-sm-3 col-xs-12 text-center">
             <div class="service-item">
               <i class="service-icon fa fa-code"></i>
-              <h4>Pencil Sharpening</h4>
+              <h4>Implementation and test</h4>
               <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
             </div>
           </div>
+
+        </div>
+        <div class="text-center">
+	   			<a href=#portfolio><i class="service-icon fa fa-arrow-down"></i></a>
         </div>
       </div>
     </div>
@@ -92,53 +97,56 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
           </div>
         </div>
         <div class="row">
-          	<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+          <div class="col-md-4 col-sm-4 col-xs-4 text-center">
             <div class="portfolio-item test1">
               <a data-toggle="modal" data-target="#safesailingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'ss_logo.svg' %>"></a>
               <h4>Safe Sailing</h4>
               <p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
             </div>
           </div>
-          	<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+          <div class="col-md-4 col-sm-4 col-xs-4 text-center">
             <div class="portfolio-item" >
               <img class="img-portfolio img-responsive" src="<%= asset_path 'loadmaster_logo.png' %>">
               <h4>Loadmaster Logger FMS</h4>
-               <p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
+               <p>Fleetmanagement system for small companies. Concept development and implementation of Phonegap application for drivers and webinterface for haulers</p>
             </div>
-        </div>
-		  	<div class="col-md-4 col-md-4 col-sm-4 col-xs-3 text-center">
-        	<div class="portfolio-item">
-				<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'stoptyven_logo.svg' %>"></a>
-				<h4>Stop Tyven, TV2 kampagne</h4>
-				<p>Front-end udvikler. </p>
-			</div>
-		</div>
+					</div>
+					<div class="col-md-4 col-md-4 col-sm-4 col-xs-3 text-center">
+        		<div class="portfolio-item">
+							<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'stoptyven_logo.svg' %>"></a>
+							<h4>Stop Tyven, TV2 kampagne</h4>
+							<p>Front-end udvikler. </p>
+						</div>
+				  </div>
         </div>
         <div class="row">
-			<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
-	            <div class="portfolio-item">
-	              <a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
-	              <h4>TV2</h4>
-	               <p>Andre mindre projekter for TV2</p>
-	            </div>
-	          </div>
-
-			<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
-            	<div class="portfolio-item">
-					<a data-toggle="modal" data-target="#roskildefortaellingermodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'roskilde_fortaellinger.png' %>"></a>
-					<h4>Roskildefortællinger</h4>
-					<p>Animeret logo</p>
+					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+						<div class="portfolio-item">
+							<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
+		          <h4>TV2</h4>
+		           <p>Andre mindre projekter for TV2</p>
+		        </div>
+		      </div>
+					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            <div class="portfolio-item">
+						<a data-toggle="modal" data-target="#roskildefortaellingermodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'roskilde_fortaellinger.png' %>"></a>
+						<h4>Roskildefortællinger</h4>
+						<p>Animeret logo</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
-            	<div class="portfolio-item">
-					<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
-					<h4>Narrow Focus</h4>
-					<p>Animeret logo</p>
+				<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+	      	<div class="portfolio-item">
+						<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
+						<h4>Narrow Focus</h4>
+						<p>Animeret logo</p>
+					</div>
 				</div>
-			</div>
         </div>
+              <div class="text-center">
+				<a href=#contact><i class="service-icon fa fa-arrow-down invert"></i></a>
       </div>
+      </div>
+
     </div>
     <!-- /Portfolio -->
 
@@ -147,9 +155,8 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-            <h3>The buttons below are impossible to resist.</h3>
-            <a href="#" class="btn btn-lg btn-default">Click Me!</a>
-            <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
+            <h1>Interested?</h1>
+            <h4>Contact information below</h4>
           </div>
         </div>
       </div>
@@ -157,8 +164,32 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
     <!-- /Call to Action -->
 
     <!-- Map -->
-    <div id="contact" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small></iframe>
+    <div id="contact" class="contact">
+    
+		    <form id="contact-form" class="col-md-3 col-sm-9 col-xs-9 text-center center-block">
+					<ul class="center-block">					  
+				<div class="form-group">
+						<li class="slider" style="position: relative;">
+							<label for="name" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">name</label>
+							 <input name="name" type="text" class=" form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="name" />
+						</li>
+					</div>
+					<div class="form-group">
+						<li class="slider" style="position: relative;">
+							<label for="email" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">email</label>
+							<input name="email" class="form-control validate[required,length[6,300]] feedback-input" id="email"/>
+						</li>
+					</div>
+						<div class="form-group">
+						<li class="slider" style="position: relative;">
+							<label for="comment" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">comment</label>
+							<textarea name="text" class="form-control validate[required,length[6,300]] feedback-input" rows="3" id="comment"></textarea>
+						</li>
+						</div>
+					</ul>
+				<button type="submit" class="btn btn-default margin-left-40">Submit</button>
+				</form>
+					    
     </div>
     <!-- /Map -->
     
