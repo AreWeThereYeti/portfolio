@@ -1,4 +1,8 @@
 
+$( document ).ready(function() {
+});
+
+
 $(function(){
 
 	$('#contact-form').slidinglabels({
@@ -13,3 +17,4 @@ $(function(){
 	});
 
 });
+
