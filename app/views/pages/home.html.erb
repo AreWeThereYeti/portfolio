@@ -79,15 +79,14 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
     </div>
     <!-- /Services -->
 
-    <!-- Callout -->
+<!--
     <div class="callout">
       <div class="vert-text">
         <h1>Looks nice, right? Keep going.</h1>
       </div>
     </div>
-    <!-- /Callout -->
     
-        <!-- Skills -->
+
     <div id="skills" class="skills">
       <div class="container">
       <section>
@@ -118,7 +117,7 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
 				</section>
       </div>
     </div>
-    <!-- /Skills -->
+-->
 
     <!-- Callout -->
     <div class="callout">
@@ -137,29 +136,31 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
             <hr>
           </div>
         </div>
+<!--         First row -->
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-4 text-center">
             <div class="portfolio-item test1">
               <a data-toggle="modal" data-target="#safesailingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'ss_logo.svg' %>"></a>
               <h4>Safe Sailing</h4>
-              <p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
+              <p class="height">Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-4 text-center">
             <div class="portfolio-item" >
               <img class="img-portfolio img-responsive" src="<%= asset_path 'loadmaster_logo.png' %>">
               <h4>Loadmaster Logger FMS</h4>
-               <p>Fleetmanagement system for small companies. Concept development and implementation of Phonegap application for drivers and webinterface for haulers</p>
+               <p class="height">Fleetmanagement system for small companies. Concept development and implementation of Phonegap application for drivers and webinterface for haulers</p>
             </div>
 					</div>
 					<div class="col-md-4 col-md-4 col-sm-4 col-xs-3 text-center">
         		<div class="portfolio-item">
 							<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'stoptyven_logo.svg' %>"></a>
 							<h4>Stop Tyven, TV2 kampagne</h4>
-							<p>Front-end udvikler. </p>
+							<p class="height">Front-end udvikler. </p>
 						</div>
 				  </div>
         </div>
+<!--         Second row -->
         <div class="row">
 					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
 						<div class="portfolio-item">
@@ -183,9 +184,34 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
 					</div>
 				</div>
         </div>
-              <div class="text-center">
-				<a href=#contact><i class="service-icon fa fa-arrow-down invert"></i></a>
-      </div>
+<!--         third row -->
+        <div class="row">
+					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+						<div class="portfolio-item">
+							<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'mee_wee_thumb.png' %>"></a>
+		          <h4>Mee Wee Room</h4>
+		           <p class="height">Interactive playroom. Interaktivt børnerum på en børneinstitution i Haderslev.</p>
+		        </div>
+		      </div>
+					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            <div class="portfolio-item">
+						<a data-toggle="modal" data-target="#roskildefortaellingermodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'mice_island.png' %>"></a>
+						<h4>Roskildefortællinger</h4>
+						<p class="height">Animeret logo</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+	      	<div class="portfolio-item">
+						<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'skibskending.jpg' %>"></a>
+						<h4>Narrow Focus</h4>
+						<p class="height">Animeret logo</p>
+					</div>
+				</div>
+        </div>
+
+        <div class="text-center">
+					<a href=#contact><i class="service-icon fa fa-arrow-down invert"></i></a>
+				</div>
       </div>
 
     </div>
@@ -204,35 +230,13 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
     </div>
     <!-- /Call to Action -->
 
-    <!-- Map -->
+    <!-- Contact -->
     <div id="contact" class="contact">
-    
-		    <form id="contact-form" class="col-md-3 col-sm-9 col-xs-9 text-center center-block">
-					<ul class="center-block">					  
-				<div class="form-group">
-						<li class="slider" style="position: relative;">
-							<label for="name" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">name</label>
-							 <input name="name" type="text" class=" form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="name" />
-						</li>
-					</div>
-					<div class="form-group">
-						<li class="slider" style="position: relative;">
-							<label for="email" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">email</label>
-							<input name="email" class="form-control validate[required,length[6,300]] feedback-input" id="email"/>
-						</li>
-					</div>
-						<div class="form-group">
-						<li class="slider" style="position: relative;">
-							<label for="comment" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">comment</label>
-							<textarea name="text" class="form-control validate[required,length[6,300]] feedback-input" rows="3" id="comment"></textarea>
-						</li>
-						</div>
-					</ul>
-				<button type="submit" class="btn btn-default margin-left-40">Submit</button>
-				</form>
+				
+			<%= render 'layouts/form' %>
 					    
     </div>
-    <!-- /Map -->
+    <!-- /Contact -->
     
 <!-- Modal Safesailing -->
 <div class="modal fade" id="safesailingmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

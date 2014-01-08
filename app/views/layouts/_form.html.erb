@@ -1,0 +1,28 @@
+<%=  form_for ContactForm.new, :html => { :class => "col-md-3 col-sm-9 col-xs-9 text-center center-block", :id => 'contact-form'}  do |f| %>
+<ul class="center-block  padding-0">	
+ <div class="form-group">
+ <li class="slider" style="position: relative;">
+   <%= f.label :name, :style =>'position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;' %>
+   <%= f.text_field :name, :required => true, :class => 'form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input' %>(required)
+ </li>
+ </div>
+ <div class="form-group">
+ <li class="slider" style="position: relative;">
+  <%= f.label :email, :style =>'position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;' %>
+  <%= f.email_field :email, :required => true, :class => 'form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input' %>(required)
+ </li>
+ </div>
+  <div class="form-group">
+   <li class="slider" style="position: relative;">
+  <%= f.label :message, :style => 'position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;'%>
+  <%= f.text_area :message, :required => true, :class => 'form-control validate[required,length[6,300]] feedback-input' %>(required)
+   </li>
+ </div>
+ <div class="field">
+  <li class="slider" style="position: relative;">
+  <%= f.submit "Submit", :class=>'btn btn-default' %>
+  </ul>
+  </li>
+</div>
+
+<% end %>
