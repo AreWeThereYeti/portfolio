@@ -1,6 +1,6 @@
 
 $( document ).ready(function() {
-	$('.carousel').carousel()
+	$('[id^="carousel"]').carousel();
 
 });
 
