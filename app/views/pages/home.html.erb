@@ -3,7 +3,6 @@
     <div id="top" class="header">
       <div class="vert-text">
         <h1>Mikkel Markvardsen</h1>
-
         <h3>Hello there. You found your way to my portfolio. </br>Maybe I can help you with something? Press below to find out</h3>
         <a href=#about><i class="service-icon fa fa-arrow-down"></i></a>
       </div>
@@ -17,13 +16,21 @@
 
           <div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center">
             <h2>Who am i?</h2>
-            <p class="lead">My name is Mikkel Markvardsen.</br> I create digital experiences.</p>
- <p class="lead">
-I am a programmer, an interaction designer, a graphics designer and a multimedia developer and I currently reside in Copenhagen, Denmark.
-I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, Angular.js, HTML, CSS, Unity3d and Max/MSP.</p>
-
- <p class="lead">Currently I am CTO of Safe Sailing Sailing, a scandinavian company that specializes in maritime education. </br> Furthermore, I create digital experiences with my other company, <a href="MasMediaLink">MAS Media.</a></p>
-         <a href=#services><i class="service-icon fa fa-arrow-down invert"></i></a>
+            <div class="row">
+	            <div class="col-md-9 col-sm-12 col-xs-12">
+	            	<span class="lead">My name is Mikkel Markvardsen.</br> I create digital experiences.</span>
+	            </div>
+							<div class="col-md-3">
+								<img class="img-responsive img-circle" src="<%= asset_path 'portrait.jpg' %>"></a>
+							</div>
+						</div>
+						<div class="row">
+							<p class="lead">
+	I am a programmer, an interaction designer, a graphics designer and a multimedia developer and I currently reside in Copenhagen, Denmark.
+	I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, Angular.js, HTML, CSS, Unity3d and Max/MSP.</p>
+	 						<p class="lead">Currently I am CTO of Safe Sailing Sailing, a scandinavian company that specializes in maritime education. </br> Furthermore, I create digital experiences with my other company, <a href="MasMediaLink">MAS Media.</a></p>
+	 						<a href=#services><i class="service-icon fa fa-arrow-down invert"></i></a>
+	         </div>
 
           </div>
         </div>
@@ -79,6 +86,46 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
     </div>
     <!-- /Services -->
 
+<!--
+    <div class="callout">
+      <div class="vert-text">
+        <h1>Looks nice, right? Keep going.</h1>
+      </div>
+    </div>
+    
+
+    <div id="skills" class="skills">
+      <div class="container">
+      <section>
+				<ul class="chart">
+					<li class="axis">
+				<div class="label">MVP</div>
+				<div class="label">All Star</div>
+				<div class="label">Slugger</div>
+				<div class="label">Rookie</div>
+				<div class="label">Triple A</div></li>
+					<li class="bar teal" style="height: 95%;" title="95">
+				<div class="percent">95<span>%</span></div>
+				<div class="skill">Karate</div></li>
+					<li class="bar salmon" style="height: 90%;" title="90">
+				<div class="percent">90<span>%</span></div>
+				<div class="skill">Taekwondo</div></li>
+					<li class="bar peach" style="height: 80%;" title="80">
+				<div class="percent">80<span>%</span></div>
+				<div class="skill">Nunchucks</div></li>
+					<li class="bar lime" style="height: 75%;" title="75">
+				<div class="percent">75<span>%</span></div>
+				<div class="skill">Bow Staff</div></li>
+					<li class="bar grape" style="height: 40%;" title="40">
+				<div class="percent">40<span>%</span></div>
+				<div class="skill">Suplex</div></li>
+				</ul>
+				</div>
+				</section>
+      </div>
+    </div>
+-->
+
     <!-- Callout -->
     <div class="callout">
       <div class="vert-text">
@@ -96,33 +143,35 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
             <hr>
           </div>
         </div>
+<!--         First row -->
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-4 text-center">
             <div class="portfolio-item test1">
               <a data-toggle="modal" data-target="#safesailingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'ss_logo.svg' %>"></a>
               <h4>Safe Sailing</h4>
-              <p>Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
+              <p class="height">Online undervisningsportal til speedbådskørekort, duelighedsbevis og det norske Båtførerbevis.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-4 text-center">
             <div class="portfolio-item" >
-              <img class="img-portfolio img-responsive" src="<%= asset_path 'loadmaster_logo.png' %>">
+              <a data-toggle="modal" data-target="#loadmastermodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'loadmaster_logo.png' %>"></a>
               <h4>Loadmaster Logger FMS</h4>
-               <p>Fleetmanagement system for small companies. Concept development and implementation of Phonegap application for drivers and webinterface for haulers</p>
+               <p class="height">Fleetmanagement system for small companies. Concept development and implementation of Phonegap application for drivers and webinterface for haulers</p>
             </div>
 					</div>
 					<div class="col-md-4 col-md-4 col-sm-4 col-xs-3 text-center">
         		<div class="portfolio-item">
-							<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'stoptyven_logo.svg' %>"></a>
+							<a data-toggle="modal" data-target="#stoptyvenmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'stoptyven_logo.svg' %>"></a>
 							<h4>Stop Tyven, TV2 kampagne</h4>
-							<p>Front-end udvikler. </p>
+							<p class="height">Front-end udvikler. </p>
 						</div>
 				  </div>
         </div>
+<!--         Second row -->
         <div class="row">
 					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
 						<div class="portfolio-item">
-							<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
+							<a data-toggle="modal" data-target="#stoptyvenmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
 		          <h4>TV2</h4>
 		           <p>Andre mindre projekter for TV2</p>
 		        </div>
@@ -136,15 +185,40 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
 				</div>
 				<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
 	      	<div class="portfolio-item">
-						<a href="#"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
+						<a data-toggle="modal" data-target="#benzinudregner"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
 						<h4>Narrow Focus</h4>
 						<p>Animeret logo</p>
 					</div>
 				</div>
         </div>
-              <div class="text-center">
-				<a href=#contact><i class="service-icon fa fa-arrow-down invert"></i></a>
-      </div>
+<!--         third row -->
+        <div class="row">
+					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+						<div class="portfolio-item">
+							<a data-toggle="modal" data-target="#meeweemodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'mee_wee_thumb.png' %>"></a>
+		          <h4>Mee Wee Room</h4>
+		           <p class="height">Interactive playroom. Interaktivt børnerum på en børneinstitution i Haderslev.</p>
+		        </div>
+		      </div>
+					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            <div class="portfolio-item">
+						<a data-toggle="modal" data-target="#meeweemodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'mice_island.png' %>"></a>
+						<h4>Roskildefortællinger</h4>
+						<p class="height">Animeret logo</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+	      	<div class="portfolio-item">
+						<a data-toggle="modal" data-target="#skibskendingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'skibskending.jpg' %>"></a>
+						<h4>Narrow Focus</h4>
+						<p class="height">Animeret logo</p>
+					</div>
+				</div>
+        </div>
+
+        <div class="text-center">
+					<a href=#contact><i class="service-icon fa fa-arrow-down invert"></i></a>
+				</div>
       </div>
 
     </div>
@@ -163,35 +237,13 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
     </div>
     <!-- /Call to Action -->
 
-    <!-- Map -->
+    <!-- Contact -->
     <div id="contact" class="contact">
-    
-		    <form id="contact-form" class="col-md-3 col-sm-9 col-xs-9 text-center center-block">
-					<ul class="center-block">					  
-				<div class="form-group">
-						<li class="slider" style="position: relative;">
-							<label for="name" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">name</label>
-							 <input name="name" type="text" class=" form-control validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="name" />
-						</li>
-					</div>
-					<div class="form-group">
-						<li class="slider" style="position: relative;">
-							<label for="email" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">email</label>
-							<input name="email" class="form-control validate[required,length[6,300]] feedback-input" id="email"/>
-						</li>
-					</div>
-						<div class="form-group">
-						<li class="slider" style="position: relative;">
-							<label for="comment" style="position: absolute; top: 5px; left: 5px; display: inline; z-index: 99;">comment</label>
-							<textarea name="text" class="form-control validate[required,length[6,300]] feedback-input" rows="3" id="comment"></textarea>
-						</li>
-						</div>
-					</ul>
-				<button type="submit" class="btn btn-default margin-left-40">Submit</button>
-				</form>
+				
+			<%= render 'layouts/form' %>
 					    
     </div>
-    <!-- /Map -->
+    <!-- /Contact -->
     
 <!-- Modal Safesailing -->
 <div class="modal fade" id="safesailingmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -202,8 +254,30 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
         <h4 class="modal-title" id="myModalLabel">Safe Sailing</h4>
       </div>
       <div class="modal-body">
-        ...
-      </div>
+       <p>Safe Sailing aims to be the standard when it comes to maritime education. The project has been underway for the last 2 years and is now implemented in Norway and Denmark. For this project I have been responsible for the development of the entire platform. Safesailing.eu is build on Joomla 3.2 with a custom template build on Twitters Bootstrap framework<a href="https://www.getbootstrap.com"> (?)</a>.</p>
+       
+			 <div id="carousel-safesailing" class="carousel slide center-block">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-safesailing" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-safesailing" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-safesailing" data-slide-to="2" class=""></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner center-block">
+            <div class="item active">
+              <img src="<%= asset_path 'safesailing/skibslys.png' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'safesailing/vigeregler.png' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'safesailing/startskaerm.png' %>">
+            </div>
+          </div>
+        </div>
+       <p> The teaching material covers basic leasure certificates in 90 minuttes of video, text, animation, quizes and more. Furthermore, I have been overseing the development of a ship recognition prototype build in Unity3d<a href="https://www.unity3d.com"> (?)</a>. </p>
+       <p>See the entire project on <a href="https://www.safesailing.eu"> www.safesailing.eu</a></p> </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
@@ -212,7 +286,7 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
 </div><!-- /.modal -->
 
 <!-- Modal Loadmaster-->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="loadmastermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -229,8 +303,8 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal stoptyven -->
+<div class="modal fade" id="stoptyvenmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -247,7 +321,25 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<!-- Modal -->
+<!-- Modal Dankorttyveri -->
+<div class="modal fade" id="dankorttyverimodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal Roskildefortællinger-->
 <div class="modal fade" id="roskildefortaellingermodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -258,6 +350,92 @@ I do most of my professional work in Ruby on Rails, Javascript, jQuery, Joomla, 
       <div class="modal-body">
       <p>Festivalfortællinger er et projekt, der bygger på alle de sjove, skæve, og rørende oplevelser, som vi har med os i Roskilde-bagagen, og som gør Roskilde Festival til noget helt unik. I forbindelse med projektet blev jeg bedt om at animere deres logo til brug i de fortællinger som var tilgængelige. Logoet er animeret i Adobe After Effects. Se flere fortællinger på <a href="https://www.facebook.com/Festivalfortaellinger">deres facebook side</a></p>
        <iframe class="center-block" src="//player.vimeo.com/video/83376756" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal benzinudregner-->
+<div class="modal fade" id="benzinudregner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Roskildefortællinger</h4>
+      </div>
+      <div class="modal-body">
+      <p>Benzinudregner Logoet er animeret i Adobe After Effects. Se flere fortællinger på <a href="https://www.facebook.com/Festivalfortaellinger">deres facebook side</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal meeweemodal-->
+<div class="modal fade" id="meeweemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Roskildefortællinger</h4>
+      </div>
+      <div class="modal-body">
+      <p>meeweemodal Logoet er animeret i Adobe After Effects. Se flere fortællinger på <a href="https://www.facebook.com/Festivalfortaellinger">deres facebook side</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal skibskending-->
+<div class="modal fade" id="skibskendingmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Roskildefortællinger</h4>
+      </div>
+      <div class="modal-body">
+      		<div id="carouselskibskending" class="carousel slide center-block">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselskibskending" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselskibskending" data-slide-to="1" class=""></li>
+            <li data-target="#carouselskibskending" data-slide-to="2" class=""></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner center-block">
+            <div class="item active">
+              <img src="<%= asset_path 'skibskending/slide1.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'skibskending/slide2.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'skibskending/slide3.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'skibskending/slide4.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'skibskending/slide5.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'skibskending/slide6.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'skibskending/slide3.jpg' %>">
+            </div>
+          </div>
+        </div>
+      <p>meeweemodal Logoet er animeret i Adobe After Effects. Se flere fortællinger på <a href="https://www.facebook.com/Festivalfortaellinger">deres facebook side</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

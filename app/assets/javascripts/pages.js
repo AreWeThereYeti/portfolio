@@ -1,4 +1,10 @@
 
+$( document ).ready(function() {
+	$('[id^="carousel"]').carousel();
+
+});
+
+
 $(function(){
 
 	$('#contact-form').slidinglabels({
@@ -13,3 +19,4 @@ $(function(){
 	});
 
 });
+
