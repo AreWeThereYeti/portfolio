@@ -171,7 +171,7 @@
         <div class="row">
 					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
 						<div class="portfolio-item">
-							<a data-toggle="modal" data-target="#stoptyvenmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
+							<a data-toggle="modal" data-target="#dankorttyverimodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'tv2_logo.png' %>"></a>
 		          <h4>TV2</h4>
 		           <p>Andre mindre projekter for TV2</p>
 		        </div>
@@ -316,7 +316,7 @@
             </div>
           </div>
         </div>
-        <p>...</p>
+        <p>My role in the project was mainly the development of the Phonegap-app, Project management and frontend development of the webapp.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -334,7 +334,34 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        ...
+        <p>The first project I was involved in with TV2 was the development of the a part of campaign called "Stop Tyven". We made a website for people where they could show their support for a campaign against theft, in a new an innovative way. Each time a person signs up on the website, he or she show up as a silluette on the site, holding hands with the other people show supports the campaign.</p>
+        
+        <div id="carousel-stoptyven" class="carousel slide center-block">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-stoptyven" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-stoptyven" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-stoptyven" data-slide-to="2" class=""></li>
+            <li data-target="#carousel-stoptyven" data-slide-to="3" class=""></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner center-block">
+            <div class="item active">
+              <img src="<%= asset_path 'stoptyven/stoptyven1.png' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'stoptyven/stoptyven2.png' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'stoptyven/stoptyven3.png' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'stoptyven/stoptyven4.png' %>">
+            </div>
+          </div>
+        </div>
+        <p>It was made using Ruby on Rails and Twitter Bootstrap. I was mainly responsible for front end and design of the site.</p>
+        <p class="text-center">Go to <a target="_blank" href="http://stoptyven.tv2.dk">stoptyven.tv2.dk</a><a href="http://stoptyven.tv2.dk">&nbsp;</a>&nbsp; to view the site</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -352,7 +379,32 @@
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        ...
+        <p>Another project we made for TV2 was this visualization of Dankort-theft in Denmark. The visualization was to be used on live TV as well as on TV2.dk</p>
+        <p>The project was made using Leaflet, Jquery and a general javascript. Before the project went live, we did a lot of data processing to get the 80.000 pieces of data to be useable for a browser. That involved a lot of spreadsheet- and python scripting.</p>
+
+				<div id="carousel-dankort" class="carousel slide center-block">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-dankort" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-dankort" data-slide-to="1" class=""></li>
+            <li data-target="#carousel-dankort" data-slide-to="2" class=""></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner center-block">
+            <div class="item active">
+              <img src="<%= asset_path 'dankorttyveri/tv2.png' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'dankorttyveri/tv21.png' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'dankorttyveri/tv22.png' %>">
+            </div>
+          </div>
+        </div>
+
+				<p>The project was nominated for a Danish Internet Award 2013 in the category "Big Data".</p>
+				<p class="text-center">Goto&nbsp;<a href="http://rocky-hamlet-4346.herokuapp.com/">this site</a>&nbsp;to try the visualization&nbsp;</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
