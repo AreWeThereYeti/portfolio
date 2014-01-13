@@ -197,21 +197,21 @@
 						<div class="portfolio-item">
 							<a data-toggle="modal" data-target="#meeweemodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'mee_wee_thumb.png' %>"></a>
 		          <h4>Mee Wee Room</h4>
-		           <p class="height">Interactive playroom. Interaktivt børnerum på en børneinstitution i Haderslev.</p>
+		           <p class="height">Interactive playroom for kids aged 3-7.</p>
 		        </div>
 		      </div>
 					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
             <div class="portfolio-item">
-						<a data-toggle="modal" data-target="#meeweemodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'mice_island.png' %>"></a>
-						<h4>Roskildefortællinger</h4>
-						<p class="height">Animeret logo</p>
+						<a data-toggle="modal" data-target="#miceislandmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'mice_island.png' %>"></a>
+						<h4>Mice Island</h4>
+						<p class="height">Student project exploring free narrative space</p>
 					</div>
 				</div>
 				<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
 	      	<div class="portfolio-item">
 						<a data-toggle="modal" data-target="#skibskendingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'skibskending.jpg' %>"></a>
-						<h4>Narrow Focus</h4>
-						<p class="height">Animeret logo</p>
+						<h4>Ship recognition</h4>
+						<p class="height">Interactive 3d simulator and test about ship recognition. </p>
 					</div>
 				</div>
         </div>
@@ -376,11 +376,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Visualization of Visa fraud</h4>
       </div>
       <div class="modal-body">
         <p>Another project we made for TV2 was this visualization of Dankort-theft in Denmark. The visualization was to be used on live TV as well as on TV2.dk</p>
-        <p>The project was made using Leaflet, Jquery and a general javascript. Before the project went live, we did a lot of data processing to get the 80.000 pieces of data to be useable for a browser. That involved a lot of spreadsheet- and python scripting.</p>
+        <p>The project was made using Leaflet, Jquery and general javascript. Before the project went live, we did a lot of data processing to get the 80.000 pieces of data to be useable for a browser. That involved a lot of spreadsheet- and python scripting.</p>
 
 				<div id="carousel-dankort" class="carousel slide center-block">
           <!-- Indicators -->
@@ -456,10 +456,42 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Roskildefortællinger</h4>
+        <h4 class="modal-title" id="myModalLabel">The Mee Wee room</h4>
       </div>
       <div class="modal-body">
-      <p>meeweemodal Logoet er animeret i Adobe After Effects. Se flere fortællinger på <a href="https://www.facebook.com/Festivalfortaellinger">deres facebook side</a></p>
+      <p>The Mee Wee room is an interactive room for kids aged 3 to 7. The room facilitates learning and playing by involving kids in digital stories told by storytellers. The stories are projected onto the walls of the room and the room itself changes mood and lighting based on the stories being told.
+</p>
+<iframe width="534" height="300" src="//www.youtube-nocookie.com/embed/6hSH9T8idhA" frameborder="0" allowfullscreen></iframe>
+<p>
+A prototype of the room was install in a childrens institution in Haderslev in Denmark during the autumn and winter of 2010-2011 and was made available to the institution after testing in the spring of 2011. </p>
+
+<p>I was responsible for the development and implementation of the prototype. After the implementation phase the system was handed over to the Kids and Tweens Foundation.</p>
+<p class="text-center">Read more about this project<a href="http://www.kidsntweens.dk/idd117.asp"> here.</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal meeweemodal-->
+<div class="modal fade" id="meeweemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">The Mee Wee room</h4>
+      </div>
+      <div class="modal-body">
+      <p>The Mee Wee room is an interactive room for kids aged 3 to 7. The room facilitates learning and playing by involving kids in digital stories told by storytellers. The stories are projected onto the walls of the room and the room itself changes mood and lighting based on the stories being told.
+</p>
+<iframe width="534" height="300" src="//www.youtube-nocookie.com/embed/6hSH9T8idhA" frameborder="0" allowfullscreen></iframe>
+<p>
+A prototype of the room was install in a childrens institution in Haderslev in Denmark during the autumn and winter of 2010-2011 and was made available to the institution after testing in the spring of 2011. </p>
+
+<p>I was responsible for the development and implementation of the prototype. After the implementation phase the system was handed over to the Kids and Tweens Foundation.</p>
+<p class="text-center">Read more about this project<a href="http://www.kidsntweens.dk/idd117.asp"> here.</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -469,20 +501,25 @@
 </div><!-- /.modal -->
 
 <!-- Modal skibskending-->
-<div class="modal fade" id="skibskendingmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="miceislandmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Roskildefortællinger</h4>
+        <h4 class="modal-title" id="myModalLabel">Mice Island</h4>
       </div>
       <div class="modal-body">
+      <p>Multiple Storylines is a framework developed in Unity 3D, which allows film viewers the opportunity to participate in a movie's story line. The viewer can control the camera's angle/viewpoint, allowing the user to explore every scene as desired and watch all characters/events in 3D.</p>
+<p>A prototype was developed for the purpose of exploring the viewer's behavior when given the opportunity of changing the viewport within a film. This prototype is a short film, developed in Unity 3D, that tells us the story about some cruel experiments taking place in a Russian laboratory. All graphics were created in Maya and Unity 3D.</p>
       		<div id="carouselskibskending" class="carousel slide center-block">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carouselskibskending" data-slide-to="0" class="active"></li>
             <li data-target="#carouselskibskending" data-slide-to="1" class=""></li>
             <li data-target="#carouselskibskending" data-slide-to="2" class=""></li>
+            <li data-target="#carouselskibskending" data-slide-to="3" class=""></li>
+            <li data-target="#carouselskibskending" data-slide-to="4" class=""></li>
+            <li data-target="#carouselskibskending" data-slide-to="5" class=""></li>
           </ol>
           <!-- Wrapper for slides -->
           <div class="carousel-inner center-block">
