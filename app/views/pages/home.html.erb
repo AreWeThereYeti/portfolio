@@ -29,7 +29,7 @@
 						</div>
 						<div class="row">
 							
-	 						<p class="lead justify">Currently I am CTO of Safe Sailing Sailing, a scandinavian company that specializes in maritime education. Besides that,  I created digital experiences that matters. </p>
+	 						<p class="lead justify">Im curious about new technology, I dive into new frameworks and I am always up for a challenge. Currently I am CTO of Safe Sailing Sailing, a scandinavian company that specializes in maritime education. Furthermore, I work as a freelancer at Konstellation. </p>
 	 						<a href=#services><i class="service-icon fa fa-arrow-down invert"></i></a>
 	         </div>
 
@@ -86,46 +86,6 @@
       </div>
     </div>
     <!-- /Services -->
-
-<!--
-    <div class="callout">
-      <div class="vert-text">
-        <h1>Looks nice, right? Keep going.</h1>
-      </div>
-    </div>
-    
-
-    <div id="skills" class="skills">
-      <div class="container">
-      <section>
-				<ul class="chart">
-					<li class="axis">
-				<div class="label">MVP</div>
-				<div class="label">All Star</div>
-				<div class="label">Slugger</div>
-				<div class="label">Rookie</div>
-				<div class="label">Triple A</div></li>
-					<li class="bar teal" style="height: 95%;" title="95">
-				<div class="percent">95<span>%</span></div>
-				<div class="skill">Karate</div></li>
-					<li class="bar salmon" style="height: 90%;" title="90">
-				<div class="percent">90<span>%</span></div>
-				<div class="skill">Taekwondo</div></li>
-					<li class="bar peach" style="height: 80%;" title="80">
-				<div class="percent">80<span>%</span></div>
-				<div class="skill">Nunchucks</div></li>
-					<li class="bar lime" style="height: 75%;" title="75">
-				<div class="percent">75<span>%</span></div>
-				<div class="skill">Bow Staff</div></li>
-					<li class="bar grape" style="height: 40%;" title="40">
-				<div class="percent">40<span>%</span></div>
-				<div class="skill">Suplex</div></li>
-				</ul>
-				</div>
-				</section>
-      </div>
-    </div>
--->
 
     <!-- Callout -->
     <div class="callout">
@@ -201,25 +161,39 @@
 		           <p class="height">Interactive playroom for kids aged 3-7. Prototype build using Max-Msp. Prototype is currently active in a childrens institution in Hoptrup, Jylland.</p>
 		        </div>
 		      </div>
-					<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
-            <div class="portfolio-item">
-						<a data-toggle="modal" data-target="#miceislandmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'mice_island.png' %>"></a>
-						<h4>Mice Island</h4>
-						<p class="height">Student project exploring free narrative space. Build using Unity3d</p>
-					</div>
+			<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            	<div class="portfolio-item">
+					<a data-toggle="modal" data-target="#miceislandmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'mice_island.png' %>"></a>
+					<h4>Mice Island</h4>
+					<p class="height">Student project exploring free narrative space. Build using Unity3d</p>
 				</div>
-				<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
-	      	<div class="portfolio-item">
-						<a data-toggle="modal" data-target="#skibskendingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'skibskending.jpg' %>"></a>
-						<h4>Ship recognition</h4>
-						<p class="height">Interactive 3d simulator and test about ship recognition. Build using Unity3d, Maya and Photoshop. On this project I was project manager and responsible for 3 freelance developers.</p>
-					</div>
+			</div>
+			<div class="col-md-4 col-md-4 col-sm-4 col-xs-4 text-center">
+	      		<div class="portfolio-item">
+					<a data-toggle="modal" data-target="#skibskendingmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'skibskending.jpg' %>"></a>
+					<h4>Ship recognition</h4>
+					<p class="height">Interactive 3d simulator and test about ship recognition. Build using Unity3d, Maya and Photoshop. On this project I was project manager and responsible for 3 freelance developers.</p>
 				</div>
+			</div>
         </div>
-
-        <div class="text-center">
-					<a href=#contact><i class="service-icon fa fa-arrow-down invert"></i></a>
+        
+<!--  ---------        4th row -------------->
+        
+        <div class="row">
+			<div class="col-md-offset-4 col-sm-offset-4 col-md-4 col-sm-4 col-xs-4 text-center">
+            	<div class="portfolio-item">
+					<a data-toggle="modal" data-target="#konstellationmodal"><img class="img-portfolio img-responsive" src="<%= asset_path 'konstellation/0.jpg' %>"></a>
+					<h4>'TDC Karaoke' for Konstellation</h4>
+					<p class="height">Freelance webdeveloper at <a href=http://www.konstellation.dk>Konstellation</a></p>
 				</div>
+			</div>
+		</div>
+		
+<!-- 		Icon -->
+		
+        <div class="text-center">
+			<a href=#contact><i class="service-icon fa fa-arrow-down invert"></i></a>
+		</div>
       </div>
 
     </div>
@@ -600,6 +574,60 @@ A prototype of the room was install in a childrens institution in Haderslev in D
             </div>
             <div class="item">
               <img src="<%= asset_path 'skibskending/slide3.jpg' %>">
+            </div>
+          </div>
+        </div>
+      <p>
+	      
+      </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal Konstellation-->
+<div class="modal fade" id="konstellationmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Freelance Frontend developer at Konstellation</h4>
+      </div>
+      <div class="modal-body">
+      <p>
+          <p>At <a href="http://www.konstellation.dk">Konstellation</a> I was involved in creating a online karaoke experience where user could sing, win prices, vote on each other and more. The system was created during an intense 4 week project and was build using a Django backend and HTML5/CSS3 with AngularJS, Jquery, Sass and Compass in the front end. In this project I was responsible for implementing the design done by Konstellation. The project is currently online on <a href="http://www.delfesten.tdc.dk">www.delfesten.tdc.dk</a>.</p>
+      		<div id="carouselkonstellation" class="carousel slide center-block">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carouselkonstellation" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselkonstellation" data-slide-to="1" class=""></li>
+            <li data-target="#carouselkonstellation" data-slide-to="2" class=""></li>
+            <li data-target="#carouselkonstellation" data-slide-to="3" class=""></li>
+            <li data-target="#carouselkonstellation" data-slide-to="4" class=""></li>
+            <li data-target="#carouselkonstellation" data-slide-to="5" class=""></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner center-block">
+            <div class="item active">
+              <img src="<%= asset_path 'konstellation/0.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'konstellation/1.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'konstellation/2.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'konstellation/3.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'konstellation/4.jpg' %>">
+            </div>
+            <div class="item">
+              <img src="<%= asset_path 'konstellation/5.jpg' %>">
             </div>
           </div>
         </div>
